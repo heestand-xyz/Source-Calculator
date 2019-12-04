@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0812A52397F981008A792B /* Pods_Source_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B87AAE7174DCF8833F0C1 /* Pods_Source_Calculator.framework */; };
+		3A0812A82397F98C008A792B /* Pods_Source_Calculator_Xcode_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688E5380723517EC63D35DFD /* Pods_Source_Calculator_Xcode_Extension.framework */; };
 		3A963DC72397EF2300C4B1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A963DC62397EF2300C4B1B1 /* AppDelegate.swift */; };
 		3A963DC92397EF2300C4B1B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A963DC82397EF2300C4B1B1 /* ContentView.swift */; };
 		3A963DCB2397EF2400C4B1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A963DCA2397EF2400C4B1B1 /* Assets.xcassets */; };
@@ -15,7 +17,7 @@
 		3A963DE02397EF5800C4B1B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A963DDF2397EF5800C4B1B1 /* Cocoa.framework */; };
 		3A963DE32397EF5800C4B1B1 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A963DE22397EF5800C4B1B1 /* SourceEditorExtension.swift */; };
 		3A963DE52397EF5800C4B1B1 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A963DE42397EF5800C4B1B1 /* SourceEditorCommand.swift */; };
-		3A963DEA2397EF5800C4B1B1 /* Source Calculator Xcode Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A963DDD2397EF5800C4B1B1 /* Source Calculator Xcode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A963DEA2397EF5800C4B1B1 /* SourceCalculator.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A963DDD2397EF5800C4B1B1 /* SourceCalculator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				3A963DEA2397EF5800C4B1B1 /* Source Calculator Xcode Extension.appex in Embed App Extensions */,
+				3A963DEA2397EF5800C4B1B1 /* SourceCalculator.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13E79D7D2540CD6712C48343 /* Pods-Source Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator.release.xcconfig"; path = "Target Support Files/Pods-Source Calculator/Pods-Source Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		3A963DC32397EF2300C4B1B1 /* Source Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Source Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A963DC62397EF2300C4B1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A963DC82397EF2300C4B1B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,12 +54,17 @@
 		3A963DD02397EF2400C4B1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A963DD22397EF2400C4B1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A963DD32397EF2400C4B1B1 /* Source_Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Source_Calculator.entitlements; sourceTree = "<group>"; };
-		3A963DDD2397EF5800C4B1B1 /* Source Calculator Xcode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Source Calculator Xcode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A963DDD2397EF5800C4B1B1 /* SourceCalculator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SourceCalculator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A963DDF2397EF5800C4B1B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3A963DE22397EF5800C4B1B1 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		3A963DE42397EF5800C4B1B1 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		3A963DE62397EF5800C4B1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A963DE72397EF5800C4B1B1 /* Source_Calculator_Xcode_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Source_Calculator_Xcode_Extension.entitlements; sourceTree = "<group>"; };
+		3A963DE72397EF5800C4B1B1 /* SourceCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceCalculator.entitlements; sourceTree = "<group>"; };
+		549FC1D8F6447017AF262AEC /* Pods-Source Calculator Xcode Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator Xcode Extension.debug.xcconfig"; path = "Target Support Files/Pods-Source Calculator Xcode Extension/Pods-Source Calculator Xcode Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		688E5380723517EC63D35DFD /* Pods_Source_Calculator_Xcode_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Source_Calculator_Xcode_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2B87AAE7174DCF8833F0C1 /* Pods_Source_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Source_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9F4C45933C38F46F88B8C2 /* Pods-Source Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Source Calculator/Pods-Source Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		EC39D2B1B7C9ED4DAE34BAA9 /* Pods-Source Calculator Xcode Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator Xcode Extension.release.xcconfig"; path = "Target Support Files/Pods-Source Calculator Xcode Extension/Pods-Source Calculator Xcode Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0812A52397F981008A792B /* Pods_Source_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A963DE02397EF5800C4B1B1 /* Cocoa.framework in Frameworks */,
+				3A0812A82397F98C008A792B /* Pods_Source_Calculator_Xcode_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				3A963DC52397EF2300C4B1B1 /* Source Calculator */,
-				3A963DE12397EF5800C4B1B1 /* Source Calculator Xcode Extension */,
+				3A963DE12397EF5800C4B1B1 /* SourceCalculator */,
 				3A963DDE2397EF5800C4B1B1 /* Frameworks */,
 				3A963DC42397EF2300C4B1B1 /* Products */,
+				5FD1A9A2ED1F400AD4B11292 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3A963DC32397EF2300C4B1B1 /* Source Calculator.app */,
-				3A963DDD2397EF5800C4B1B1 /* Source Calculator Xcode Extension.appex */,
+				3A963DDD2397EF5800C4B1B1 /* SourceCalculator.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,19 +134,32 @@
 			isa = PBXGroup;
 			children = (
 				3A963DDF2397EF5800C4B1B1 /* Cocoa.framework */,
+				6E2B87AAE7174DCF8833F0C1 /* Pods_Source_Calculator.framework */,
+				688E5380723517EC63D35DFD /* Pods_Source_Calculator_Xcode_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A963DE12397EF5800C4B1B1 /* Source Calculator Xcode Extension */ = {
+		3A963DE12397EF5800C4B1B1 /* SourceCalculator */ = {
 			isa = PBXGroup;
 			children = (
 				3A963DE22397EF5800C4B1B1 /* SourceEditorExtension.swift */,
 				3A963DE42397EF5800C4B1B1 /* SourceEditorCommand.swift */,
 				3A963DE62397EF5800C4B1B1 /* Info.plist */,
-				3A963DE72397EF5800C4B1B1 /* Source_Calculator_Xcode_Extension.entitlements */,
+				3A963DE72397EF5800C4B1B1 /* SourceCalculator.entitlements */,
 			);
-			path = "Source Calculator Xcode Extension";
+			path = SourceCalculator;
+			sourceTree = "<group>";
+		};
+		5FD1A9A2ED1F400AD4B11292 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A9F4C45933C38F46F88B8C2 /* Pods-Source Calculator.debug.xcconfig */,
+				13E79D7D2540CD6712C48343 /* Pods-Source Calculator.release.xcconfig */,
+				549FC1D8F6447017AF262AEC /* Pods-Source Calculator Xcode Extension.debug.xcconfig */,
+				EC39D2B1B7C9ED4DAE34BAA9 /* Pods-Source Calculator Xcode Extension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A963DD62397EF2400C4B1B1 /* Build configuration list for PBXNativeTarget "Source Calculator" */;
 			buildPhases = (
+				97C0BA8CBD1199E16D1F4182 /* [CP] Check Pods Manifest.lock */,
 				3A963DBF2397EF2300C4B1B1 /* Sources */,
 				3A963DC02397EF2300C4B1B1 /* Frameworks */,
 				3A963DC12397EF2300C4B1B1 /* Resources */,
 				3A963DEE2397EF5800C4B1B1 /* Embed App Extensions */,
+				DB25C7685EDECC89C70FEF58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,10 +186,11 @@
 			productReference = 3A963DC32397EF2300C4B1B1 /* Source Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A963DDC2397EF5800C4B1B1 /* Source Calculator Xcode Extension */ = {
+		3A963DDC2397EF5800C4B1B1 /* SourceCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A963DEB2397EF5800C4B1B1 /* Build configuration list for PBXNativeTarget "Source Calculator Xcode Extension" */;
+			buildConfigurationList = 3A963DEB2397EF5800C4B1B1 /* Build configuration list for PBXNativeTarget "SourceCalculator" */;
 			buildPhases = (
+				4A8B4F68EB295F8BE98BDE8D /* [CP] Check Pods Manifest.lock */,
 				3A963DD92397EF5800C4B1B1 /* Sources */,
 				3A963DDA2397EF5800C4B1B1 /* Frameworks */,
 				3A963DDB2397EF5800C4B1B1 /* Resources */,
@@ -172,9 +199,9 @@
 			);
 			dependencies = (
 			);
-			name = "Source Calculator Xcode Extension";
+			name = SourceCalculator;
 			productName = "Source Calculator Xcode Extension";
-			productReference = 3A963DDD2397EF5800C4B1B1 /* Source Calculator Xcode Extension.appex */;
+			productReference = 3A963DDD2397EF5800C4B1B1 /* SourceCalculator.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +236,7 @@
 			projectRoot = "";
 			targets = (
 				3A963DC22397EF2300C4B1B1 /* Source Calculator */,
-				3A963DDC2397EF5800C4B1B1 /* Source Calculator Xcode Extension */,
+				3A963DDC2397EF5800C4B1B1 /* SourceCalculator */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +260,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A8B4F68EB295F8BE98BDE8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Source Calculator Xcode Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C0BA8CBD1199E16D1F4182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Source Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB25C7685EDECC89C70FEF58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Source Calculator/Pods-Source Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Source Calculator/Pods-Source Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Source Calculator/Pods-Source Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A963DBF2397EF2300C4B1B1 /* Sources */ = {
@@ -258,7 +349,7 @@
 /* Begin PBXTargetDependency section */
 		3A963DE92397EF5800C4B1B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A963DDC2397EF5800C4B1B1 /* Source Calculator Xcode Extension */;
+			target = 3A963DDC2397EF5800C4B1B1 /* SourceCalculator */;
 			targetProxy = 3A963DE82397EF5800C4B1B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -390,6 +481,7 @@
 		};
 		3A963DD72397EF2400C4B1B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9F4C45933C38F46F88B8C2 /* Pods-Source Calculator.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -414,6 +506,7 @@
 		};
 		3A963DD82397EF2400C4B1B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E79D7D2540CD6712C48343 /* Pods-Source Calculator.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -438,13 +531,14 @@
 		};
 		3A963DEC2397EF5800C4B1B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549FC1D8F6447017AF262AEC /* Pods-Source Calculator Xcode Extension.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Source Calculator Xcode Extension/Source_Calculator_Xcode_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = SourceCalculator/SourceCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2QHTY6FMW2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Source Calculator Xcode Extension/Info.plist";
+				INFOPLIST_FILE = SourceCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -459,13 +553,14 @@
 		};
 		3A963DED2397EF5800C4B1B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC39D2B1B7C9ED4DAE34BAA9 /* Pods-Source Calculator Xcode Extension.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Source Calculator Xcode Extension/Source_Calculator_Xcode_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = SourceCalculator/SourceCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2QHTY6FMW2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Source Calculator Xcode Extension/Info.plist";
+				INFOPLIST_FILE = SourceCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -499,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A963DEB2397EF5800C4B1B1 /* Build configuration list for PBXNativeTarget "Source Calculator Xcode Extension" */ = {
+		3A963DEB2397EF5800C4B1B1 /* Build configuration list for PBXNativeTarget "SourceCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A963DEC2397EF5800C4B1B1 /* Debug */,

@@ -10,8 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack(spacing: 10) {
+            Text("Source Calculator")
+                .font(.system(.title, design: .monospaced))
+            Text("Evaluate Expressions in Xcode")
+                .font(.system(.subheadline, design: .monospaced))
+                .layoutPriority(1)
+        }
+            .padding()
     }
 }
 

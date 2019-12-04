@@ -4,15 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Source Calculator Xcode Extension.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>Source Calculator.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+		<key>SourceCalculator.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3A963DC22397EF2300C4B1B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A963DDC2397EF5800C4B1B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

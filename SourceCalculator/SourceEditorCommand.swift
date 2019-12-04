@@ -8,14 +8,9 @@
 
 import Foundation
 import XcodeKit
+import Expression
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
-    
-    enum EditError: Error {
-        case badLines
-        case badSelections
-        case multiRowNotSupported
-    }
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         do {
@@ -27,19 +22,17 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     }
     
     func editSelections(buffer: XCSourceTextBuffer, edit: (String) throws -> (String)) throws {
-        guard let lines = buffer.lines as? [String] else {
-            throw EditError.badLines
-        }
-        guard let selectedRanges = buffer.selections as? [XCSourceTextRange] else {
-            throw EditError.badSelections
-        }
+        guard let lines = buffer.lines as? [String] else { return }
+        guard let selectedRanges = buffer.selections as? [XCSourceTextRange] else { return }
         for selectedRange in selectedRanges {
             let startLine = selectedRange.start.line
             let endLine = selectedRange.end.line
             let startColum = selectedRange.start.column
             let endColumn = selectedRange.end.column
             guard startLine == endLine else {
-                throw EditError.multiRowNotSupported
+                throw NSError(domain: "Source Calculator", code: 2, userInfo: [
+                    NSLocalizedDescriptionKey : "Selection can not span multiple rows."
+                ])
             }
             let line = lines[startLine]
             let oldText = line[startColum...endColumn]
@@ -49,7 +42,19 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     }
     
     func edit(_ text: String) throws -> String {
-        text.replacingOccurrences(of: "R", with: "_")
+        let expression = Expression(text)
+        do {
+            let result = try expression.evaluate()
+            var resultText = String(describing: result)
+            if resultText[(resultText.count - 2)..<resultText.count] == ".0" {
+                resultText = resultText[0..<(resultText.count - 2)]
+            }
+            return resultText
+        } catch {
+            throw NSError(domain: "Source Calculator", code: 1, userInfo: [
+                NSLocalizedDescriptionKey : String(describing: error)
+            ])
+        }
     }
     
 }

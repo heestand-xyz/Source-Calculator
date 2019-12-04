@@ -34,7 +34,7 @@
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Source Editor Command</string>
+					<string>Calculate</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
@@ -45,7 +45,5 @@
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Hexagons. All rights reserved.</string>
-	<key>XCSourceEditorCommandName</key>
-	<string>Calculate</string>
 </dict>
 </plist>

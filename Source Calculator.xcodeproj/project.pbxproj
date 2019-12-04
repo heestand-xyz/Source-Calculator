@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2866575CF9376EB043B0CF16 /* Pods_SourceCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13966B23A578056173BB4FF3 /* Pods_SourceCalculator.framework */; };
 		3A0812A52397F981008A792B /* Pods_Source_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B87AAE7174DCF8833F0C1 /* Pods_Source_Calculator.framework */; };
-		3A0812A82397F98C008A792B /* Pods_Source_Calculator_Xcode_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688E5380723517EC63D35DFD /* Pods_Source_Calculator_Xcode_Extension.framework */; };
 		3A963DC72397EF2300C4B1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A963DC62397EF2300C4B1B1 /* AppDelegate.swift */; };
 		3A963DC92397EF2300C4B1B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A963DC82397EF2300C4B1B1 /* ContentView.swift */; };
 		3A963DCB2397EF2400C4B1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A963DCA2397EF2400C4B1B1 /* Assets.xcassets */; };
@@ -45,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13966B23A578056173BB4FF3 /* Pods_SourceCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SourceCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E79D7D2540CD6712C48343 /* Pods-Source Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator.release.xcconfig"; path = "Target Support Files/Pods-Source Calculator/Pods-Source Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		3A963DC32397EF2300C4B1B1 /* Source Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Source Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A963DC62397EF2300C4B1B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +62,10 @@
 		3A963DE62397EF5800C4B1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A963DE72397EF5800C4B1B1 /* SourceCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceCalculator.entitlements; sourceTree = "<group>"; };
 		549FC1D8F6447017AF262AEC /* Pods-Source Calculator Xcode Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator Xcode Extension.debug.xcconfig"; path = "Target Support Files/Pods-Source Calculator Xcode Extension/Pods-Source Calculator Xcode Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		688E5380723517EC63D35DFD /* Pods_Source_Calculator_Xcode_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Source_Calculator_Xcode_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2B87AAE7174DCF8833F0C1 /* Pods_Source_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Source_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9F4C45933C38F46F88B8C2 /* Pods-Source Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Source Calculator/Pods-Source Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		B9043D15107C989E00D4935F /* Pods-SourceCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceCalculator.release.xcconfig"; path = "Target Support Files/Pods-SourceCalculator/Pods-SourceCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		E4D9466FD3D4B2407D2888A0 /* Pods-SourceCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceCalculator.debug.xcconfig"; path = "Target Support Files/Pods-SourceCalculator/Pods-SourceCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		EC39D2B1B7C9ED4DAE34BAA9 /* Pods-Source Calculator Xcode Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Source Calculator Xcode Extension.release.xcconfig"; path = "Target Support Files/Pods-Source Calculator Xcode Extension/Pods-Source Calculator Xcode Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A963DE02397EF5800C4B1B1 /* Cocoa.framework in Frameworks */,
-				3A0812A82397F98C008A792B /* Pods_Source_Calculator_Xcode_Extension.framework in Frameworks */,
+				2866575CF9376EB043B0CF16 /* Pods_SourceCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +137,7 @@
 			children = (
 				3A963DDF2397EF5800C4B1B1 /* Cocoa.framework */,
 				6E2B87AAE7174DCF8833F0C1 /* Pods_Source_Calculator.framework */,
-				688E5380723517EC63D35DFD /* Pods_Source_Calculator_Xcode_Extension.framework */,
+				13966B23A578056173BB4FF3 /* Pods_SourceCalculator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +160,8 @@
 				13E79D7D2540CD6712C48343 /* Pods-Source Calculator.release.xcconfig */,
 				549FC1D8F6447017AF262AEC /* Pods-Source Calculator Xcode Extension.debug.xcconfig */,
 				EC39D2B1B7C9ED4DAE34BAA9 /* Pods-Source Calculator Xcode Extension.release.xcconfig */,
+				E4D9466FD3D4B2407D2888A0 /* Pods-SourceCalculator.debug.xcconfig */,
+				B9043D15107C989E00D4935F /* Pods-SourceCalculator.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -277,7 +281,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Source Calculator Xcode Extension-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SourceCalculator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,7 +492,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Source Calculator/Source_Calculator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Source Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = 2QHTY6FMW2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -515,7 +519,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Source Calculator/Source_Calculator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Source Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = 2QHTY6FMW2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -535,7 +539,7 @@
 		};
 		3A963DEC2397EF5800C4B1B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 549FC1D8F6447017AF262AEC /* Pods-Source Calculator Xcode Extension.debug.xcconfig */;
+			baseConfigurationReference = E4D9466FD3D4B2407D2888A0 /* Pods-SourceCalculator.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SourceCalculator/SourceCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,7 +552,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "se.hexagons.Source-Calculator.Source-Calculator-Xcode-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = se.hexagons.sourcecalculator.extension.xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -557,7 +561,7 @@
 		};
 		3A963DED2397EF5800C4B1B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC39D2B1B7C9ED4DAE34BAA9 /* Pods-Source Calculator Xcode Extension.release.xcconfig */;
+			baseConfigurationReference = B9043D15107C989E00D4935F /* Pods-SourceCalculator.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SourceCalculator/SourceCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,7 +574,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "se.hexagons.Source-Calculator.Source-Calculator-Xcode-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = se.hexagons.sourcecalculator.extension.xcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

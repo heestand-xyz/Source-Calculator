@@ -11,7 +11,7 @@ target 'Source Calculator' do
 
 end
 
-target 'Source Calculator Xcode Extension' do
+target 'SourceCalculator' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

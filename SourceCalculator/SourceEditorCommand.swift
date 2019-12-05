@@ -35,9 +35,9 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
                 ])
             }
             let line = lines[startLine]
-            let oldText = line[startColum...endColumn]
+            let oldText = line[startColum..<endColumn]
             let newText = try edit(oldText)
-            buffer.lines[startLine] = line[0..<startColum] + newText + line[(endColumn + 1)..<line.count]
+            buffer.lines[startLine] = line[0..<startColum] + newText + line[endColumn..<line.count]
         }
     }
     

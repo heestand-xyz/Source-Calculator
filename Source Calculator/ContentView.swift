@@ -16,6 +16,14 @@ struct ContentView: View {
             Text("Evaluate Expressions in Xcode")
                 .font(.system(.subheadline, design: .monospaced))
                 .layoutPriority(1)
+            Button(action: {
+                guard let settingsUrl = URL(string: "x-apple.systempreferences:com.apple.preference.extensions?Xcode_Source_Editor") else { return }
+                NSWorkspace.shared.open(settingsUrl)
+            }) {
+                Text("Activate in System Preferences")
+            }
+            Text("Extensions / Xcode Source Editor")
+                .opacity(0.5)
         }
             .padding()
     }
